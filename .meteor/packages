@@ -9,3 +9,5 @@ insecure
 ian:bootstrap-3
 iron:router
 houston:admin
+autopublish
+accounts-password

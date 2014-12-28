@@ -1,7 +1,19 @@
 /* CSS declarations go here */
 
-.center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.dropdown-menu {
+    width: 400% !important;
+    height: 350% !important;
+    left:-300%;
+}
+
+.dropdown-menu.register {
+    width: 400% !important;
+    height: 520% !important;
+    left:-300%;
+}
+
+@media (min-width: 768px) {
+    .pull-right-lg {
+        float: right;
+    }
 }
