@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650b8f1a-8595-4940-91e0-057e2d055231" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/logo1.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/logo2.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/assets/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/layout/ApplicationLayout.html" afterPath="$PROJECT_DIR$/client/views/layout/ApplicationLayout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/Home/Main.html" afterPath="$PROJECT_DIR$/client/views/Home/Main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/Home/head.html" afterPath="$PROJECT_DIR$/client/views/Home/head.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/views/Home/home.js" afterPath="$PROJECT_DIR$/client/views/Home/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/assets/css/sendMeMealApp.css" afterPath="$PROJECT_DIR$/client/assets/css/sendMeMealApp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sendMeMealApp.iws" />
@@ -39,8 +32,8 @@
       <file leaf-file-name="head.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/views/Home/head.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.074074" vertical-offset="619" max-vertical-offset="1602">
-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+            <state vertical-scroll-proportion="-12.0" vertical-offset="612" max-vertical-offset="1710">
+              <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#template#1;n#!!top" expanded="true" />
               </folding>
@@ -48,11 +41,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sendMeMealApp.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/assets/css/sendMeMealApp.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="home.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/views/Home/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41042346" vertical-offset="0" max-vertical-offset="720">
-              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.20521173" vertical-offset="216" max-vertical-offset="882">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -69,9 +82,9 @@
         <option value="$PROJECT_DIR$/client/views/layout/ApplicationLayout.html" />
         <option value="$PROJECT_DIR$/client/views/Home/Main.html" />
         <option value="$PROJECT_DIR$/client/views/Home/footer.html" />
-        <option value="$PROJECT_DIR$/client/assets/css/sendMeMealApp.css" />
         <option value="$PROJECT_DIR$/client/assets/js/myBootstrap.js" />
         <option value="$PROJECT_DIR$/client/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/client/assets/css/sendMeMealApp.css" />
         <option value="$PROJECT_DIR$/client/views/Home/head.html" />
         <option value="$PROJECT_DIR$/client/views/Home/home.js" />
       </list>
@@ -206,6 +219,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sendMeMealApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sendMeMealApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="client" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -372,22 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1797005" vertical-offset="0" max-vertical-offset="601">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/assets/css/sendMeMealApp.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.029315962" vertical-offset="0" max-vertical-offset="614">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/logo2.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -398,10 +417,26 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/css/sendMeMealApp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="216">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/views/Home/head.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.074074" vertical-offset="619" max-vertical-offset="1602">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+        <state vertical-scroll-proportion="-12.0" vertical-offset="612" max-vertical-offset="1710">
+          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#0;n#template#1;n#!!top" expanded="true" />
           </folding>
@@ -410,8 +445,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/views/Home/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41042346" vertical-offset="0" max-vertical-offset="720">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.20521173" vertical-offset="216" max-vertical-offset="882">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
           <folding />
         </state>
       </provider>

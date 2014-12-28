@@ -1,15 +1,15 @@
 /* CSS declarations go here */
 
 .dropdown-menu {
-    width: 400% !important;
+    width: 250% !important;
     height: 350% !important;
-    left:-300%;
+    left:-150%;
 }
 
 .dropdown-menu.register {
-    width: 400% !important;
+    width: 300% !important;
     height: 520% !important;
-    left:-300%;
+    left:-200%;
 }
 
 @media (min-width: 768px) {
