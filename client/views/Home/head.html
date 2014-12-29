@@ -1,90 +1,115 @@
 
 <template name = "headerTemplate">
+
     <div class="row">
+      <!--  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        	<header >
+                <img  src="logo2.jpeg" class="img-responsive"  width="150px" height="160px">
+        	</header>
+        </div>-->
 
-        <nav class="navbar navbar-default" role="navigation">
-        	<!-- Brand and toggle get grouped for better mobile display -->
+            <div class='navbar navbar-default'>
 
-            <div class="navbar-header">
-                <img  src="logo2.jpeg" class="img-responsive"  width="50px" height="60px">
+                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                    <header class="clearfix">
+                        <img  src="logo2.jpeg" class="img-responsive"  width="185px" height="160px">
+                    </header>
+                </div>
+                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active" id = "Register">
+
+                            <a href="#" data-toggle="tab"> <span class="glyphicon glyphicon-plus" ></span> Register</a>
+                        </li>
+                        <li id = "Login">
+                            <a href="#" data-toggle="tab"><span class="glyphicon glyphicon-user" ></span> Login</a>
+                        </li>
+
+                    </ul>
+
+                    {{> UI.dynamic template=myTemplate}}
+
+                </div>
 
             </div>
-
-            <div class="navbar-header">
-
-        		<a class="navbar-brand" href="#">sendMeMeal</a>
-        	</div>
-
-            <ul class="nav navbar-nav pull-right-lg">
-                <li class="dropdown">
-                    <a href="#" class="dropdown" data-toggle="dropdown"> <span>  </span> Login with password <b class="caret"></b></a>
-                    {{>loginTemplate}}
-
-                </li>
-                <li class="dropdown">
-                    <a href="#" ><span>  </span></a>
-
-
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown" data-toggle="dropdown"> <span>  </span>Register with phone <span>  </span> <b class="caret"></b></a>
-                        {{>registerTemplate}}
-                </li>
-
-            </ul>
-        </nav>
-
     </div>
+
+
 </template>
 
 <template name = "loginTemplate">
+        <form action="" method="POST" class="form-inline well well-sm login" role="form">
 
-    <div class="dropdown-menu login" style="padding: 17px" >
-        <form action="" method="POST" role="form">
             <div class="form-group">
-                <input type="text" class="form-control" name="" id="" placeholder="Phone number">
+                <input type="text" class="form-control input-sm" name="" id="" placeholder="Phone number">
             </div>
 
             <div class="form-group">
-                <input type="text" class="form-control" name="" id="password" placeholder="Password">
+                <input type="text" class="form-control input-sm" name="" id="password" placeholder="Password">
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button  id = "back_button" class="btn btn-primary">Back</button>
+            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+
             <a href="#" id = "forgot_password">Forgot Password</a>
         </form>
 
-    </div>
-
-
 </template>
 
+<template name = "forgotTemplate">
+    <form action="" method="POST" class="form-inline well well-sm login" role="form">
 
+        <div class="form-group">
+            <input type="text" class="form-control input-sm" name="" id="" placeholder="Phone number">
+        </div>
+
+
+        <button type="submit" class="btn btn-warning btn-sm">Submit</button>
+
+        <button id = "Back" class="btn btn-primary btn-sm">Back</button>
+    </form>
+
+</template>
 
 
 
 <template name = "registerTemplate">
-    <div class="dropdown-menu register" style="padding: 17px">
-        <form action="" method="POST" role="form">
-            <div class="form-group">
-                <input type="text" class="form-control" name="" id="" placeholder="Phone number">
+        <form action="" method="POST" class="form-inline well well-sm register" role="form">
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+                        <div class="form-group">
+                            <input type="text" class="form-control input-sm" name="" id="" placeholder="Phone number">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control input-sm" name="" id="" placeholder="Name">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control input-sm" name="" id="" placeholder="Email">
+                        </div>
+
+                        <div class="form-group">
+                            <select class="form-control input-sm ">
+                                <option>Select your Company</option>
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                </div>
             </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                    </div>
+                </div>
 
-            <div class="form-group">
-                <input type="text" class="form-control" name="" id="" placeholder="Name">
             </div>
-
-            <div class="form-group">
-                <input type="text" class="form-control" name="" id="" placeholder="Email">
-            </div>
-
-            <div class="form-group">
-                <input type="text" class="form-control" name="" id="" placeholder="Phone number">
-            </div>
-
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-
         </form>
-    </div>
+
 </template>

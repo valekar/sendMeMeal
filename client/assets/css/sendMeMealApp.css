@@ -1,6 +1,6 @@
 /* CSS declarations go here */
 
-.dropdown-menu {
+.dropdown-menu.login {
     width: 250% !important;
     height: 350% !important;
     left:-150%;
@@ -17,3 +17,4 @@
         float: right;
     }
 }
+
