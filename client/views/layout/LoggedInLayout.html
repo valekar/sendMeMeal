@@ -1,0 +1,18 @@
+<template name = "LoggedInLayout">
+    <div class="container">
+
+        <header class = "header">
+            {{> yield "loggedInHeader"}}
+        </header>
+
+        <section class="Main">
+            {{>yield "loggedInUser"}}
+        </section>
+        <footer class="footer">
+            {{> yield "loggedInFooter"}}
+        </footer>
+
+    </div>
+
+
+</template>

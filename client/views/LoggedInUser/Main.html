@@ -1,0 +1,97 @@
+<template name = "mainLoggedInTemplate">
+
+    <div class="row ">
+
+        <div class="well well-sm">
+        <div class="panel panel-heading">
+            <section class="menus">
+                <!--<div class = "row ">-->
+                    {{isAdminUser}}
+                    {{#if isAdminUser}}
+                        <div class="page-header">
+                          <h1>Admin<small>panel</small></h1>
+                            <input type="file" id="fileMe" class=" input-sm">
+                            <button id ="uploadme" class="btn btn-primary">Uploadme</button>
+                            <button id="remove" class="btn btn-danger">Remove</button>
+
+                        </div>
+                    <div class="row">
+                        {{#each uploadss}}
+                            <div class="btn-separator">
+
+                            </div>
+                                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 well well-sm">
+
+                                        <img src="{{url}}" alt="alt-text" class="img-responsive" />
+                                        <div class="checkbox">
+                                        	<label>
+                                        		<input type="radio" value="{{_id}}" id="removeCheckbox" name="removeCheckbox">
+
+                                        	</label>
+                                        </div>
+                                    </div>
+                                    <div class="btn-separator">
+
+                                    </div>
+
+                        {{/each}}
+                    </div>
+
+
+
+
+                    {{else}}
+
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center well well-sm">
+                            <h2><img src = "menu.jpeg" width ="150px" height="40px"/></h2>
+                        </div>
+                    {{/if}}
+
+                <!--</div>-->
+            </section>
+
+            <section class="menu-items">
+                <div class="row ">
+
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    	<section class="north-menu">
+                            <div class="row">
+                            	<header>
+                                    <div class="panel panel-primary">
+                                    	  <div class="panel-heading text-center">
+                                    			<h3 class="panel-title">North Indian</h3>
+                                    	  </div>
+                                    	  <div class="panel-body">
+                                    			Panel body
+
+                                    	  </div>
+                                    </div>
+                            	</header>
+                            </div>
+                    	</section>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    	<section class="south-menu">
+                            <div class="row">
+                            	<header>
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading text-center">
+                                            <h3 class="panel-title ">south Indian</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            Panel body
+                                        </div>
+                                    </div>
+                            	</header>
+                            </div>
+                    	</section>
+                    </div>
+                </div>
+            </section>
+        </div>
+        </div>
+    </div>
+</template>
+

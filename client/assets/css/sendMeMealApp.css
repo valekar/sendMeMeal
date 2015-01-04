@@ -18,3 +18,14 @@
     }
 }
 
+.row{ padding-bottom:-20px; }
+
+.btn-separator:after {
+    content: ' ';
+    display: block;
+    float: left;
+    background: #ADADAD;
+    margin: 0 5px;
+    height: 200px;
+    width: 1px;
+}

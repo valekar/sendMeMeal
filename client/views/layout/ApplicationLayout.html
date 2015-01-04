@@ -1,23 +1,19 @@
 <template name = "ApplicationLayout">
 <div class="container">
 
+
+
     <header class = "header">
-        {{> yield "header"}}
+            {{> yield "guestHeader"}}
     </header>
 
     <section class="Main">
-
-
-
-        {{>yield}}
-
-
+            {{>yield "guestUser"}}
     </section>
     <footer class="footer">
         {{> yield "footer"}}
     </footer>
 
+
 </div>
-
-
 </template>

@@ -1,5 +1,5 @@
 
-<template name = "headerTemplate">
+<template name = "headerGuestTemplate">
 
     <div class="row">
       <!--  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -10,12 +10,13 @@
 
             <div class='navbar navbar-default'>
 
-                <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
-                    <header class="clearfix">
-                        <img  src="logo2.jpeg" class="img-responsive"  width="185px" height="160px">
+                <div class="col-xs-3 col-sm-7 col-md-7 col-lg-7">
+                    <header class="clearfix ">
+                        <img  src="logo2.jpeg" class="img-responsive hidden-xs"  width="185px" height="160px">
+                        <img  src="logo2.jpeg" class="img-responsive hidden-lg hidden-md hidden-sm"  width="85px" height="60px">
                     </header>
                 </div>
-                <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
+                <div class="col-xs-9 col-sm-5 col-md-5 col-lg-5 ">
 
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="active" id = "Register">
@@ -42,14 +43,14 @@
         <form action="" method="POST" class="form-inline well well-sm login" role="form">
 
             <div class="form-group">
-                <input type="text" class="form-control input-sm" name="" id="" placeholder="Phone number">
+                <input type="text" class="form-control input-sm" name="loginPhone" id="loginPhone" placeholder="Phone number">
             </div>
 
             <div class="form-group">
-                <input type="text" class="form-control input-sm" name="" id="password" placeholder="Password">
+                <input type="text" class="form-control input-sm" name="" id="loginPassword" placeholder="Password">
             </div>
 
-            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+            <button type="submit" class="btn btn-primary btn-sm" id="userLogin">Submit</button>
 
             <a href="#" id = "forgot_password">Forgot Password</a>
         </form>
@@ -64,7 +65,7 @@
         </div>
 
 
-        <button type="submit" class="btn btn-warning btn-sm">Submit</button>
+        <button type="submit" class="btn btn-warning btn-sm" id = "sendUserPassword">Submit</button>
 
         <button id = "Back" class="btn btn-primary btn-sm">Back</button>
     </form>
@@ -81,23 +82,29 @@
 
 
                         <div class="form-group">
-                            <input type="text" class="form-control input-sm" name="" id="" placeholder="Phone number">
+                            <input type="text" class="form-control input-sm" name="phoneNumber" id="phoneNumber" placeholder="Phone number">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control input-sm" name="" id="" placeholder="Name">
+                            <input type="text" class="form-control input-sm" name="name" id="name" placeholder="Name">
                         </div>
 
                         <div class="form-group">
-                            <input type="text" class="form-control input-sm" name="" id="" placeholder="Email">
+                            <input type="text" class="form-control input-sm" name="email" id="email" placeholder="Email">
                         </div>
 
-                        <div class="form-group">
-                            <select class="form-control input-sm ">
+
+
+
+
+                    <div class="form-group">
+                            <select name = "selectCompany" id = "selectCompany" class="form-control input-sm ">
                                 <option>Select your Company</option>
-                                <option>Mustard</option>
-                                <option>Ketchup</option>
-                                <option>Relish</option>
+                                {{#each listCompanies}}
+                                    <option value = "{{_id}}"> {{name}}</option>
+                                {{/each}}
+
+
                             </select>
                         </div>
                 </div>
@@ -105,7 +112,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                        <button  class="btn btn-primary btn-sm" id = "createUser">Register</button>
                     </div>
                 </div>
 

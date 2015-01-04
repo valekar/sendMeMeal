@@ -5,9 +5,17 @@
 # but you can also edit it by hand.
 
 meteor-platform
-insecure
 ian:bootstrap-3
 iron:router
-houston:admin
-autopublish
 accounts-password
+accolver:twilio-meteor
+cfs:standard-packages
+cfs:filesystem
+aldeed:collection2
+
+
+
+yogiben:autoform-file
+houston:admin
+tsega:bootstrap3-lightbox
+sjors:meteor-masonry
