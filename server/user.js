@@ -1,49 +1,6 @@
-Meteor.publish('itemList',function(){
-    return Items.find();
-});
-
-
 Meteor.publish('adminUser',function(userId){
    return Houston._admins.find({user_id:userId});
 });
-
-
-
-Uploads.allow({
-    insert:function(userId,doc){
-        //console.log(userId);
-        if(userId === Houston._admins.find().fetch()[0].user_id)
-            return true;
-        else
-            return false;
-    },
-    update:function(userId,doc){
-        console.log(userId);
-        if(userId === Houston._admins.find().fetch()[0].user_id)
-            return true;
-        else
-            return false;
-    },
-    remove:function(userId,doc){
-        console.log(userId);
-        if(userId === Houston._admins.find().fetch()[0].user_id)
-            return true;
-        else
-            return false;
-    },
-    download:function(userId,doc){
-        console.log(userId);
-
-            return true;
-    }
-});
-
-Meteor.publish('uploads',function(){
-    return Uploads.find();
-})
-
-
-
 
 
 Meteor.methods({
@@ -101,8 +58,6 @@ Meteor.methods({
             }
 
         });
-
-
 
        var user_id = Accounts.createUser(
             userObject

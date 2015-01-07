@@ -8,28 +8,37 @@ Schemas = {};
  * added_by:String(UserId)
  * */
 /************************FOOD*********************************/
-Food = new Mongo.Collection("food");
+Food = new Meteor.Collection("food");
 
 
 
 Schemas.Food = new SimpleSchema({
     name: {
         type: String,
-        label: "Food Name"
+        label: "Food Name",
+        optional:false
 
     },
     price: {
         type: Number,
-        label: "Food Price"
+        label: "Food Price",
+        optional:false
 
     },
     added_by: {
         type: String,
-        label: "Added by admin id"
+        label: "Added by admin id",
+        optional:false
     },
     picture: {
-        type: String
+        type: String,
+        optional:false
 
+    },
+    food_type:{
+        type:String,
+        label:"Food Type(South/North)",
+        optional:false
     }
 
 

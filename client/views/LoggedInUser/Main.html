@@ -1,12 +1,12 @@
 <template name = "mainLoggedInTemplate">
 
-    <div class="row ">
+    <div class="row "  >
 
         <div class="well well-sm">
         <div class="panel panel-heading">
             <section class="menus">
                 <!--<div class = "row ">-->
-                    {{isAdminUser}}
+
                     {{#if isAdminUser}}
                         <div class="page-header">
                           <h1>Admin<small>panel</small></h1>
@@ -25,6 +25,7 @@
                                         <img src="{{url}}" alt="alt-text" class="img-responsive" />
                                         <div class="checkbox">
                                         	<label>
+                                                <strong>{{_id}}</strong>
                                         		<input type="radio" value="{{_id}}" id="removeCheckbox" name="removeCheckbox">
 
                                         	</label>
@@ -42,7 +43,7 @@
 
                     {{else}}
 
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center well well-sm">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center well well-sm"  >
                             <h2><img src = "menu.jpeg" width ="150px" height="40px"/></h2>
                         </div>
                     {{/if}}
@@ -51,42 +52,166 @@
             </section>
 
             <section class="menu-items">
-                <div class="row ">
+                <div class="row"  >
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        <section class="north-menu">
+                            <div class="row" >
+                                <aside class="menus">
 
-
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    	<section class="north-menu">
-                            <div class="row">
-                            	<header>
-                                    <div class="panel panel-primary">
-                                    	  <div class="panel-heading text-center">
-                                    			<h3 class="panel-title">North Indian</h3>
-                                    	  </div>
-                                    	  <div class="panel-body">
-                                    			Panel body
-
-                                    	  </div>
-                                    </div>
-                            	</header>
-                            </div>
-                    	</section>
-                    </div>
-
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                    	<section class="south-menu">
-                            <div class="row">
-                            	<header>
-                                    <div class="panel panel-primary">
+                                    <div class="panel panel-info"  data-spy="affix" id="myNav">
                                         <div class="panel-heading text-center">
-                                            <h3 class="panel-title ">south Indian</h3>
+                                            <h3 class="panel-title">All Indian</h3>
+                                        </div>
+
+                                        <div class="panel-body">
+                                            <ul class="nav nav-stacked">
+                                                <li role="presentation" class="active"><a href="#north-indian">North Indian</a></li>
+                                                <li role="presentation"><a href="#south-indian">South Indian</a></li>
+                                                <li role="presentation"><a href="#special">Special For the day</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="panel-heading text-center">
+                                            <h3 class="panel-title">Your Orders</h3>
                                         </div>
                                         <div class="panel-body">
-                                            Panel body
+                                            <ul class="nav nav-stacked">
+                                                <!--<li role="presentation" class="active"><a href="#">Home</a></li>
+                                                <li role="presentation"><a href="#">Profile</a></li>
+                                                <li role="presentation"><a href="#">Messages</a></li>-->
+                                            </ul>
                                         </div>
+
                                     </div>
-                            	</header>
+                                </aside>
+
                             </div>
-                    	</section>
+
+
+
+                        </section>
+                    </div>
+
+                    <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                        <section class="south-menu">
+                            <div class="row">
+                                <!-- Start of South Indian dishes-->
+                                <article class="South-Indian" id="south-indian">
+                                    <div class="panel panel-warning" >
+
+                                        <div class="panel-heading text-center">
+                                            <h3 class="panel-title ">South Indian</h3>
+
+                                        </div>
+
+                                        <article>
+                                            <div class="panel-body" >
+
+                                                <div class="row">
+                                                    {{#each foodList}}
+                                                        <section class="photos">
+                                                            <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                                                                <div  class="thumbnail">
+
+
+                                                                    <h4> <span class="label label-info pull-left">{{name}}</span></h4>
+                                                                    <h4><span class="label label-default pull-right"><i class="fa fa-inr"></i>{{price}}</span></h4>
+
+                                                                    <img src = "{{url}}" class="img-responsive" >
+                                                                    <div class="caption">
+                                                                        <div class="row">
+
+                                                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 well well-sm">
+                                                                                Quantity :: {{quantity}}
+                                                                            </div>
+                                                                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 well well-sm">
+                                                                                total :: {{itemAmount}}
+                                                                            </div>
+
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                                                                <button class="btn btn-primary" id ="addFood">
+                                                                                    <i class="fa fa-plus"></i>
+
+                                                                                </button>
+                                                                                <button class="btn btn-primary">
+                                                                                    <i class="fa fa-minus"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </section>
+
+                                                    {{/each}}
+
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </article>
+                                <!--End of south Indian dishes-->
+                                <!-- Start of South Indian dishes-->
+                                <article class="North-Indian" id="north-indian">
+                                <div class="panel panel-warning" >
+
+                                        <div class="panel-heading text-center">
+                                            <h3 class="panel-title ">North Indian</h3>
+
+                                        </div>
+
+                                    <article>
+                                        <div class="panel-body" >
+
+                                            <div class="row">
+                                                {{#each foodList}}
+                                                    <section class="photos">
+                                                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                                                            <div  class="thumbnail">
+
+
+                                                                <h4> <span class="label label-info pull-left">{{name}}</span></h4>
+                                                                <h4><span class="label label-default pull-right"><i class="fa fa-inr"></i>{{price}}</span></h4>
+
+                                                                <img src = "{{url}}" class="img-responsive" >
+                                                                <div class="caption">
+                                                                    <div class="row">
+
+                                                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 well well-sm">
+                                                                            Quantity :: {{quantity}}
+                                                                        </div>
+                                                                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 well well-sm">
+                                                                            total :: {{itemAmount}}
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                                                            <button class="btn btn-primary" id ="addFood">
+                                                                                <i class="fa fa-plus"></i>
+
+                                                                            </button>
+                                                                            <button class="btn btn-primary">
+                                                                                <i class="fa fa-minus"></i>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+
+                                                {{/each}}
+
+                                            </div>
+                                        </div>
+                                    </article>
+                                </div>
+                                </article>
+                                <!--End of south Indian dishes-->
+                            </div>
+                        </section>
                     </div>
                 </div>
             </section>

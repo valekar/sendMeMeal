@@ -22,7 +22,7 @@
                                     			<h3 class="panel-title">North Indian</h3>
                                     	  </div>
                                     	  <div class="panel-body">
-                                    			Panel body
+
                                     	  </div>
                                     </div>
                             	</header>
@@ -34,17 +34,51 @@
                     	<section class="south-menu">
                             <div class="row">
                             	<header>
-                                    <div class="panel panel-info">
+                                    <div class="panel panel-warning">
                                         <div class="panel-heading text-center">
                                             <h3 class="panel-title ">south Indian</h3>
 
-
-
-
                                         </div>
-                                        <div class="panel-body">
+                                        <div class="panel-body" >
+
+                                                 <div class="row">
+                                                     {{#each foodList}}
+                                                        <section class="photos">
+                                                             <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                                                                 <div  class="thumbnail">
 
 
+                                                                        <h4> <span class="label label-info pull-left">{{name}}</span></h4>
+                                                                        <h4><span class="label label-default pull-right"><i class="fa fa-inr"></i>{{price}}</span></h4>
+
+                                                                     <img src = "{{url}}" class="img-responsive" >
+                                                                     <div class="caption">
+                                                                     <div class="row">
+
+                                                                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 well well-sm">
+                                                                             Quanity :: 0
+                                                                         </div>
+
+                                                                     </div>
+                                                                         <div class="row">
+                                                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                                                                                 <button class="btn btn-primary" >
+                                                                                     <i class="fa fa-plus"></i>
+
+                                                                                 </button>
+                                                                                 <button class="btn btn-primary" >
+                                                                                     <i class="fa fa-minus"></i>
+                                                                                 </button>
+                                                                             </div>
+                                                                         </div>
+                                                                     </div>
+                                                                 </div>
+                                                             </div>
+                                                        </section>
+
+                                                     {{/each}}
+
+                                                 </div>
                                         </div>
                                     </div>
                             	</header>

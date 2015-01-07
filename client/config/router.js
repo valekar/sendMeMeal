@@ -1,5 +1,14 @@
 Router.route('/',{
 
+
+    onWait:function(){
+        return [
+            Meteor.subscribe('companiesList'),
+            Meteor.subscribe('uploads'),
+            Meteor.subscribe('foodList')
+        ]
+    },
+
     onBeforeAction: function () {
 
         if(Meteor.user()){
@@ -26,6 +35,20 @@ Router.route('/',{
 
 Router.route('/profile',{
 
+    waitOn: function () {
+        // return one handle, a function, or an array
+        return  [
+            Meteor.subscribe('adminUser',Meteor.userId()),
+            Meteor.subscribe('uploads'),
+            Meteor.subscribe('foodList')
+        ];
+
+    },
+    onBeforeAction: function () {
+
+        Session.keys ={};
+        this.next();
+    },
     action:function(){
         //only for guest users
         if(Meteor.user()){

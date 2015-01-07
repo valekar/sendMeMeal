@@ -29,3 +29,11 @@
     height: 200px;
     width: 1px;
 }
+
+#myNav.affix {
+    position: fixed;
+    top: 0;
+    width: 15.5%;
+    z-index:10;
+}
+
