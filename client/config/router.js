@@ -40,7 +40,8 @@ Router.route('/profile',{
         return  [
             Meteor.subscribe('adminUser',Meteor.userId()),
             Meteor.subscribe('uploads'),
-            Meteor.subscribe('foodList')
+            Meteor.subscribe('foodList'),
+            Meteor.subscribe('getItem')
         ];
 
     },

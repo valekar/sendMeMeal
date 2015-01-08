@@ -38,6 +38,10 @@ Schemas.Items = new SimpleSchema({
     created_by:{
         type:String,
         label:"Created by user id"
+    },
+    item_sum_price:{
+        type:Number,
+        label:"Total price of current Item"
     }
 });
 
