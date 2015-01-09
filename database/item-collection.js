@@ -18,22 +18,37 @@ Schemas = {};
 Items = new Meteor.Collection("items");
 
 
-
-Schemas.Items = new SimpleSchema({
-    quantity: {
-        type: Number,
-        label: "Quantity"
-
-    },
-    food_id:{
+Schemas.Item_food = new SimpleSchema({
+    id:{
         type:String,
-        label:"Food_id",
+        label:"Food.id",
         max:200
     },
-    food_price:{
+    price:{
         type:Number,
-        label:"Food Price"
+        label:"Food.Price"
+    },
+    name:{
+        type:String,
+        label:"Food.name"
+    }
+});
 
+
+Schemas.Items = new SimpleSchema({
+    item_quantity: {
+        type: Number,
+        label: "item Quantity"
+
+    },
+    food:{
+       type:Schemas.Item_food,
+        optional:false
+    },
+
+    item_ordered:{
+      type:Boolean,
+      label:"Is it ordered?"
     },
     created_by:{
         type:String,

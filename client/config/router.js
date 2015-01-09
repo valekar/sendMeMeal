@@ -41,7 +41,8 @@ Router.route('/profile',{
             Meteor.subscribe('adminUser',Meteor.userId()),
             Meteor.subscribe('uploads'),
             Meteor.subscribe('foodList'),
-            Meteor.subscribe('getItem')
+            Meteor.subscribe('getItem'),
+            Meteor.subscribe('itemsForCurrentUser',Meteor.userId())
         ];
 
     },

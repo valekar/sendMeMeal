@@ -78,6 +78,36 @@
                                                 <!--<li role="presentation" class="active"><a href="#">Home</a></li>
                                                 <li role="presentation"><a href="#">Profile</a></li>
                                                 <li role="presentation"><a href="#">Messages</a></li>-->
+
+
+                                                   <table class="table table-bordered">
+                                                   	<thead>
+                                                   		<tr>
+                                                   			<th>Food</th>
+                                                            <th>Qnt</th>
+                                                            <th>price</th>
+                                                            <th>total</th>
+                                                   		</tr>
+
+
+                                                   	</thead>
+                                                   	<tbody>
+                                                    {{#each items}}
+                                                   		<tr>
+
+                                                   			<td>{{food.name}}</td>
+                                                            <td>{{item_quantity}}</td>
+                                                            <td>{{food.price}}</td>
+                                                            <td>{{item_sum_price}}</td>
+                                                   		</tr>
+
+                                                    {{/each}}
+                                                        <tr>
+                                                            Grand Total :: {{grandTotal}}
+                                                        </tr>
+                                                   	</tbody>
+                                                   </table> 
+
                                             </ul>
                                         </div>
 
@@ -134,7 +164,7 @@
                                                                                     <i class="fa fa-plus"></i>
 
                                                                                 </button>
-                                                                                <button class="btn btn-primary">
+                                                                                <button class="btn btn-primary" id ="removeFood">
                                                                                     <i class="fa fa-minus"></i>
                                                                                 </button>
                                                                             </div>
@@ -192,7 +222,7 @@
                                                                                 <i class="fa fa-plus"></i>
 
                                                                             </button>
-                                                                            <button class="btn btn-primary">
+                                                                            <button class="btn btn-primary" id ="removeFood">
                                                                                 <i class="fa fa-minus"></i>
                                                                             </button>
                                                                         </div>
